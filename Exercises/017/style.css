@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+font-size:xx-large ;
+color: rgb(0, 0, 0);
+}
+#principal {
+    text-align: center;
+    font-weight: bolder;
+    color: brown;
+}
+p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.basic {
+color: blue;
+}
+.intermediate {
+color: blueviolet;
+}
+.advanced {
+color: rgb(0, 163, 90);
+}
+#paragraph {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small
+}

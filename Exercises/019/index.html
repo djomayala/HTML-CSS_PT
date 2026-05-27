@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element</title>
+    <style>
+        a {
+            color: chartreuse;
+            text-decoration: none;
+        }
+        a:hover {
+            color: brown;
+        }
+        a:visited {
+            color: rgb(217, 255, 90);
+        }
+        a:active {
+            color: black;
+            background-color: aqua;
+        }
+        a::before {
+            content: "→";
+        }
+        a::after {
+            content: "←";
+        }
+    </style>
+</head>
+<body>
+    <p>Please find the links below:</p>
+    <ol>
+        <li><a href="https://brightcreatives.co.za/" target="_blank">Bright Creatives</a></li>
+        <li><a href="https://brightprints.co.za/" target="_blank">Bright Prints</a></li>
+        <li><a href="https://buystuffs.online/" target="_blank">Buy Online</a></li>
+    </ol>
+</body>
+</html>
