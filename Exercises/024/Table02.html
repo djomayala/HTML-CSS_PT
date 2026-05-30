@@ -11,24 +11,46 @@
         table {
             width: 800px;
             border-collapse: collapse;
+            position: absolute;
+        }
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+            background-color: antiquewhite;
+            color: brown;
         }
         th , td {
             padding: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.26);
+            border: 1px solid rgba(0, 0, 0, 0.856);
         }
 
         th {
-            background-color: rgba(0, 0, 0, 0.26);
+            background-color: rgba(0, 0, 0, 0.856);
             color: white;
         }
         td.pop {
             text-align: right;
+        
         }
+
+thead > tr {
+    position: sticky;
+    top: -1px;
+}
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.178);
     </style>
 </head>
 <body>
     <h1>Big Table</h1>
     <table>
+        <caption>The first big table</caption>
         <thead>
             <tr>
                 <th>Location</th>
@@ -40,6 +62,90 @@
         </thead>
         <tbody>
             
+            <tr>
+                <td>India</td>
+                <td class="pop">1,417,492,000</td>
+                <td>17.2%</td>
+                <td>1 Jul 2025</td>
+                <td>Official projection</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td class="pop">1,404,890,000</td>
+                <td>17.0%</td>
+                <td>31 Dec 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>United States</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Indonesia</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Pakistan</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Nigeria</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Mexico</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
+            <tr>
+                <td>Philippines</td>
+                <td class="pop">341,784,857</td>
+                <td>4.1%</td>
+                <td>1 Jul 2025</td>
+                <td>Official estimate</td>
+            </tr>
             <tr>
                 <td>India</td>
                 <td class="pop">1,417,492,000</td>
