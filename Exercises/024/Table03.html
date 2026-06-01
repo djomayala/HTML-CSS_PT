@@ -21,14 +21,14 @@
     <Table>
         <thead>
             <tr>
-                <th>Group</th>
-                <th>Names</th>
-                <th colspan="3">Films</th>
+                <th scope="col">Group</th>
+                <th scope="col">Names</th>
+                <th colspan="3" scope="colgroup">Films</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Women</th>
+                <th rowspan="3" scope="rowgroup">Women</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -47,7 +47,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Men</th>
+                <th rowspan="3" scope="rowgroup">Men</th>
                 <td>Bruno Mendonca</td>
                 <td>Hulk</td>
                 <td>Inception</td>
@@ -64,6 +64,10 @@
                 <td>Star War</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
             </tr>
         </tbody>
     </Table>
