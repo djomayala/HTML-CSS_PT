@@ -52,7 +52,7 @@ section#icons > a > img:hover {
     box-sizing: border-box;
     transform: translate(-10%, -10%);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.767);
-    transition: 0.3s;
+    transition: 0.3s, border 1s;
 }
 
 section#icons {
