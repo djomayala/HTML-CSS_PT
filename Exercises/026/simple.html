@@ -8,30 +8,55 @@
 <body>
     <h1>Simple Form</h1>
     <form action="submit.php" method="post" autocomplete="off">
-        <p><label for="name1">Name:</label> 
-            <input type="text" name="name" id="name1" required value="Joe"></p>
-        <p><label for="surname1">Surname:</label> 
-            <input type="text" name="surname" id="surname1" required value="Mayala"></p>
-        <p>
-            <label for="iphone">Phone Number</label>
-            <input type="tel" name="phone" id="iphone" value="0027xxx">
-        </p>
-        <p>
-            <label for="email1">Email Adress</label>
-            <input type="email" name="email" id="email1">
-        </p>
-        <p>
-            <label for="note1">Note</label>
-            <input type="number" name="note" id="note1" min="0" max="10" step="0.5">
-        </p>
-        <p>
-            <label for="date1">Date</label>
-            <input type="date" name="date" id="date1">
-        </p>
-        <p>
-            <label for="time1">Time</label>
-            <input type="time" name="time" id="time1">
-        </p>
+        <fieldset>
+            <legend>Personal Infos</legend>
+            <p><label for="name1">Name:</label>
+                <input type="text" name="name" id="name1" required value="Joe"></p>
+            <p><label for="surname1">Surname:</label>
+                <input type="text" name="surname" id="surname1" required value="Mayala"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <p>
+                <label for="iphone">Phone Number</label>
+                <input type="tel" name="phone" id="iphone" value="0027xxx">
+            </p>
+            <p>
+                <label for="email1">Email Adress</label>
+                <input type="email" name="email" id="email1">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Other Details</legend>
+            <p>
+                <label for="note1">Note</label>
+                <input type="number" name="note" id="note1" min="0" max="10" step="0.5">
+            </p>
+            <p>
+                <label for="date1">Date</label>
+                <input type="date" name="date" id="date1">
+            </p>
+            <p>
+                <label for="time1">Time</label>
+                <input type="time" name="time" id="time1">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                <input type="radio" name="sex" id="imale" value="M" checked><label for="imale">Male</label>
+                <input type="radio" name="sex" id="ifemale" value="F"><label for="ifemale">Female</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <p>
+                <input type="checkbox" name="football" id="ifoot"><label for="ifoot">Football</label><br>
+                <input type="checkbox" name="basket" id="basket"><label for="basket">Basketball</label><br>
+                <input type="checkbox" name="handball" id="hand"><label for="hand">Handball</label><br>
+                <input type="checkbox" name="soccer" id="soccer" checked><label for=soccer">Soccer</label>
+            </p>
+        </fieldset>
         <p><input type="submit" value="submit"> <input type="reset" value="Reset"></p>
         
     </form>
