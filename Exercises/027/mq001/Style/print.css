@@ -1,0 +1,23 @@
+@charset "UTF-8" ;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2em;
+}
+
+header > menu {
+    display: none;
+}
+
+main {
+    padding: 20px 100px;
+}
+
+footer > menu {
+    display: none;
+}
