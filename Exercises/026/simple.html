@@ -40,6 +40,13 @@
                 <label for="time1">Time</label>
                 <input type="time" name="time" id="time1">
             </p>
+            <p>
+                <label for="range">Range</label>
+                <input type="range" name="range" id="range" min="0" max="10"
+                oninput="range1.innerHTML = Number(range.value)">
+
+                <output id="range1">5</output>
+            </p>
         </fieldset>
         <fieldset>
             <legend>Gender</legend>
@@ -56,6 +63,37 @@
                 <input type="checkbox" name="handball" id="hand"><label for="hand">Handball</label><br>
                 <input type="checkbox" name="soccer" id="soccer" checked><label for=soccer">Soccer</label>
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Selection</legend>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="" selected>Select</option>
+                <optgroup label="Gauteng">
+                    <option value="JHB">Johannesburg</option>
+                    <option value="PTA">Pretoria</option>
+                    <option value="LP">Limpopo</option>
+                    <option value="SP">Springs</option>
+                </optgroup>
+                <optgroup label="KwaZulu Natal">
+                    <option value="PT">Pietermaritzburg</option>
+                    <option value="DUR">Durban</option>
+                    <option value="MP">Mpumalanga</option>
+                </optgroup>
+            
+            </select>
+            <label for="suburb">Suburb</label>
+            <input type="text" name="suburb" id="suburb" list="list">
+            <datalist id="list">
+                <option value="Ki">Killarney</option>
+                <option value="Ye">Yeoville</option>
+                <option value="Be">Berea</option>
+            </datalist>
+            <p>
+                <label for="text">Please send us a message</label><br>
+                <textarea name="text" id="text"  cols="30" rows="10"></textarea>
+            </p>
+                
         </fieldset>
         <p><input type="submit" value="submit"> <input type="reset" value="Reset"></p>
         
